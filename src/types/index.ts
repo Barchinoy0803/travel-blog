@@ -3,5 +3,4 @@ export interface ITravelBlog {
     location: string,
     description: string,
     id: null | number
-
 }
