@@ -33,13 +33,12 @@ const TravelBlog = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     
-    console.log(id);
     const newBlog = {
       ...formData,
       id: new Date().getTime()
     };
 
-    if (id !== undefined) {
+    if (id !== undefined && id !== null) {
       await patchData(`/blog/${id}`, formData)
       setId(null)
     } else {
