@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { api } from "../api"
-import { ITravelBlog } from "../types"
 
 export const useFetch = <T = any>(endpoint: string, reload?: boolean, params?: object) => {
     const [data, setData] = useState<T | null>(null)

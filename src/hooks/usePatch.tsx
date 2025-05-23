@@ -22,5 +22,5 @@ export const usePatch = () => {
                 setLoading(false)
             })
     }
-    return {patchData, loading}
+    return {patchData, loading, error}
 }
